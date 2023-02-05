@@ -7,13 +7,15 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - user: actions/checkout@v2
+    - name: Checkout source code
+    user: actions/checkout@v2
 
     - name: Run one-line script
       run: echo Hellow, world!
