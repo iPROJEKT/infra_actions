@@ -85,26 +85,27 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+DJANGO_CONST = django.contrib.auth.password_validation
 
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': (
-            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'
+            'DJANGO_CONST.UserAttributeSimilarityValidator'
         ),
     },
     {
         'NAME': (
-            'django.contrib.auth.password_validation.MinimumLengthValidator'
+            'DJANGO_CONST.MinimumLengthValidator'
         ),
     },
     {
         'NAME': (
-            'django.contrib.auth.password_validation.CommonPasswordValidator'
+            'DJANGO_CONST.CommonPasswordValidator'
         ),
     },
     {
         'NAME': (
-            'django.contrib.auth.password_validation.NumericPasswordValidator'
+            'DJANGO_CONST.NumericPasswordValidator'
         ),
     },
 ]
